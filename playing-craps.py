@@ -14,7 +14,7 @@ frequency10 = 0
 frequency11 = 0
 frequency12 = 0
 ## Deanna Clayton, Roll the dice 6,000,000 times
-for roll in range(6_000):
+for roll in range(6_000_000):
     face = random.randrange(1, 7) + random.randrange(1, 7)
     if face == 2:
         frequency2 += 1
@@ -53,7 +53,7 @@ print(f'{11:>4}{frequency11:>13}')
 print(f'{12:>4}{frequency12:>13}')
 
 ## Deanna Clayton, Rolling craps, or winning
-trials = 6_000
+trials = 6_000_0000
 craps = frequency2 + frequency3 + frequency12
 win = frequency7 + frequency11
 print('Craps:', craps/trials)
